@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0; 
+  }
+
+@font-face {
+  font-family: "AlexBrush";
+src: url("../fonts/AlexBrush-Regular.ttf");}
+
+#bodydiv, #html {
+  height: 85%;
+  overflow: auto;
+}
+
+#imageandtext {
+  color: #ffffff; 
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  padding-left: 15%;
+  padding-right: 15%;}
+  #imageandtext #imagemain {
+    width: 70%;
+    position: absolute;}
+    #imageoverlay {
+      z-index: 1;
+      text-align: right;
+      right: 25%;
+      top: 10%;
+      padding: 2%;
+      position: absolute;
+      /* fallback */
+      background-color: #640010;
+      background-repeat: repeat-y;
+      background: rgba(100, 0, 16, .85);
+      /* Safari 4-5, Chrome 1-9 
+      background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+      /* Safari 5.1, Chrome 10+ 
+      background: -webkit-linear-gradient(right, rgba(100, 0, 16, 1), rgba(255, 255, 255, 0));
+      /* Firefox 3.6+ 
+      background: -moz-linear-gradient(right, rgba(100, 0, 16, 1), rgba(255, 255, 255, 0));
+      /* IE 10 
+      background: -ms-linear-gradient(right, rgba(100, 0, 16, 1), rgba(255, 255, 255, 0));
+      /* Opera 11.10+ 
+      background: -o-linear-gradient(right, rgba(100, 0, 16, 1), rgba(255, 255, 255, 0));*/
+    }
+
+
+
+#accordionWrapper{
+  overflow: hidden;
+}
+
+#accordion {
+  float: left;
+  width: 80%;
+  padding: 10%;
+}
+.ui-widget{
+  font-size: 1em;
+}
+
+
+#footerdiv {
+  color: #ffffff; 
+  font-family: AlexBrush, serif;
+  font-size: 25px;
+  position: relative;
+  width: 100%;
+  height: 15%;
+  bottom: 0px;
+  
+  background-color: #770010;
+  clear: both;
+}
+#footerdiv #homeButton{
+  float: right;
+  top: 2%;
+  right: 10%;
+}
+#footerdiv .button{
+  width: 22%;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 5px;
+  /*background-color: #990020;*/
+}
