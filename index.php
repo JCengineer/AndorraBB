@@ -24,10 +24,19 @@
 			<div id="imageandtext">
 				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B"/>
 				<div id="imageoverlay">
-
-					<h1> Andorra <br> Bed & Breakfast </h1>
-					<h2> Nuala & Fionan Clifford </h2>
-					<h3> 94 Merrion Road, Ballsbridge,<br>Dublin 4, Ireland </h3>
+					<div id="overlayA">
+						<h1> 
+							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
+							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
+							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
+							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
+							Andorra <br> Bed & Breakfast </h1>
+						<h2> Nuala & Fionan Clifford </h2>
+						<h3> 94 Merrion Road, Ballsbridge,<br>Dublin 4, Ireland </h3>
+					</div>
+					<div id="overlayB">
+						<h3>Comfortable and homely<br>guest accommodation</h3>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -40,7 +49,8 @@
 					ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
 					amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
 					odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-					</p>
+					</p><br>
+					<a href="Rooms.php" class="acLink">More info</a>
 				</div>
 				<h3 id="acH2">Facilities</h3>
 				<div>
@@ -49,7 +59,8 @@
 					purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
 					velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
 					suscipit faucibus urna.
-					</p>
+					</p><br>
+					<a href="Facilities.php" class="acLink">More info</a>
 				</div>
 				<h3 id="acH3">Location</h3>
 				<div>
@@ -63,7 +74,8 @@
 						<li>List item one</li>
 						<li>List item two</li>
 						<li>List item three</li>
-					</ul>
+					</ul><br>
+					<a href="Location.php" class="acLink">More info</a>
 				</div>
 				<h3 id="acH4">Book now</h3>
 				<div>
@@ -78,43 +90,15 @@
 					Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
 					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
 					inceptos himenaeos.
-					</p>
+					</p><br>
+					<a href="BookNow.php" class="acLink">More info</a>
 				</div>
 
 			</div>
 		</div>
 	</div>
 	<div id="footerdiv">
-		<span> Thank you for visiting Andorrabb.com. We hope to see you soon. </span>
-		<button id="homeButton" class="button">Home</button>
-		<div id="row1">
-			<button id="aboutUs" class="button">
-				About Us
-			</button>
-			<button id="contactUs" class="button">
-				Contact Us
-			</button>
-			<button id="blog" class="button">
-				Blog
-			</button>
-			<button id="friends" class="button">
-				Friends
-			</button>
-		</div>
-		<div id="row2">
-			<button id="roomsButton" class="button">
-				Rooms
-			</button>
-			<button id="locationButton" class="button">
-				Location
-			</button>
-			<button id="facilitiesButton" class="button">
-				Facilities
-			</button>
-			<button id="bookButton" class="button">
-				Book Now
-			</button>
-		</div>
+		<?php include ('footer.php'); ?>
 	</div>
 </body>
 <footer></footer>

@@ -7,55 +7,73 @@
   font-family: "AlexBrush";
 src: url("../fonts/AlexBrush-Regular.ttf");}
 
-#bodydiv, #html {
+#bodydiv {
+  background-color: #fff9fc;
   height: 85%;
   overflow: auto;
 }
 
+#top{
+  overflow: hidden;
+  position: relative;
+}
 #imageandtext {
   color: #ffffff; 
-  position: relative;
   overflow: hidden;
+  position: relative;
   height: 100%;
-  padding-left: 15%;
-  padding-right: 15%;}
+  min-width: 100%;}
   #imageandtext #imagemain {
-    width: 70%;
-    position: absolute;}
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;}
+#imageandtextB {
+  color: #ffffff; 
+  overflow: hidden;
+  position: relative;
+  height: 100%;}
+  #imageandtextB #imageband {
+    position: absolute;
+    clip: rect(327px, 800px, 547px, 0px);
+    top:-327px;
+    height: 100%;
+    padding-left: 5%;
+    padding-right: 5%;}
+    
     #imageoverlay {
       z-index: 1;
       text-align: right;
-      right: 25%;
+      right: 5%;
       top: 10%;
-      padding: 2%;
-      position: absolute;
-      /* fallback */
-      background-color: #640010;
-      background-repeat: repeat-y;
-      background: rgba(100, 0, 16, .85);
-      /* Safari 4-5, Chrome 1-9 
-      background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
-      /* Safari 5.1, Chrome 10+ 
-      background: -webkit-linear-gradient(right, rgba(100, 0, 16, 1), rgba(255, 255, 255, 0));
-      /* Firefox 3.6+ 
-      background: -moz-linear-gradient(right, rgba(100, 0, 16, 1), rgba(255, 255, 255, 0));
-      /* IE 10 
-      background: -ms-linear-gradient(right, rgba(100, 0, 16, 1), rgba(255, 255, 255, 0));
-      /* Opera 11.10+ 
-      background: -o-linear-gradient(right, rgba(100, 0, 16, 1), rgba(255, 255, 255, 0));*/
-    }
+      position: absolute;}
+      #imageoverlay #overlayA{
+        padding: 2%;
+        /* fallback */
+        background-color: #640010;
+        background-repeat: repeat-y;
+        background: rgba(100, 0, 16, .85);}
+      #imageoverlay #overlayB{
+        padding: 2%;
+        color: #640010;
+        /* fallback */
+        background-color: #ffffff;
+        background-repeat: repeat-y;
+        background: rgba(255,255,255, .85);}
+      
 
 
 
 #accordionWrapper{
   overflow: hidden;
+  position: relative;
 }
 
 #accordion {
-  float: left;
   width: 80%;
-  padding: 10%;
-}
+  padding: 10%;}
+  #accordion .acLink{
+    position:relative;
+    left: 90%;}
 .ui-widget{
   font-size: 1em;
 }
@@ -70,18 +88,25 @@ src: url("../fonts/AlexBrush-Regular.ttf");}
   height: 15%;
   bottom: 0px;
   
+  overflow: hidden;
   background-color: #770010;
-  clear: both;
-}
-#footerdiv #homeButton{
-  float: right;
-  top: 2%;
-  right: 10%;
-}
-#footerdiv .button{
-  width: 22%;
-  margin-left: 1%;
-  margin-right: 1%;
-  padding: 5px;
-  /*background-color: #990020;*/
-}
+  clear: both;}
+  #footerdiv #thankYouText{
+    left: 1%;
+    position: relative;}
+  #footerdiv #homeButton{
+    float: right;
+    position: absolute;
+    top: 2%;
+    right: 2.5%;}
+  #footerdiv #expandFooterIcon{
+    color: #ffffff;
+    float: right;
+    position: relative;}
+  #footerdiv .button{
+    width: 22%;
+    height:30%;
+    margin-left: 1%;
+    margin-right: 1%;
+    /*background-color: #990020;*/
+  }
