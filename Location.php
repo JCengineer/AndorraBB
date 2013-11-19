@@ -18,20 +18,20 @@
 
 <body>
 	<div id="bodydiv">
-		<div id="top">
-			
-		<!--  First Column -->
-			<div id="imageandtext">
-				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B" />
-				<div id="imageoverlay">
-					<div id="overlayA">
-						<h1>Location of Andorra<br>Bed & Breakfast</h1>
-					</div>
+		<div id="imageandtext">
+			<img id="imageband" src="images\houseband.jpg" alt="Andorra B&B" />
+			<div id="imageoverlay">
+				<div id="overlayA">
+					<h1>Location of Andorra<br>Bed & Breakfast</h1>
 				</div>
 			</div>
 		</div>
-		<div id="locationMain">
+		<div id="locationMain" class="pageMain">
 			We are situated in a popular location, for leisure and business alike.<br>
+			Distance to... Hospital, Aircoach, RDS(main & simonscourt - major exhibitions/events), 
+			aviva(rugby, football), dart (sandymount to city, houth, Wicklow, Intercity), sea, 
+			herbert park, embassies, dodder, shops, villages, restaurants, ferry ports/airports, 
+			universities, CCD, dundrum, dog track, IFSC.
 			<img id="locationImage" src="images\location.jpg" alt="Location of Andorra B&B" /><br>
 		</div>
 	</div>

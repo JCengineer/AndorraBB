@@ -18,19 +18,15 @@
 
 <body>
 	<div id="bodydiv">
-		<div id="top">
-			
-		<!--  First Column -->
-			<div id="imageandtext">
-				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B" />
-				<div id="imageoverlay">
-					<div id="overlayA">
-						<h1>Book a room at Andorra<br>Bed & Breakfast</h1>
-					</div>
+		<div id="imageandtext">
+			<img id="imageband" src="images\houseband.jpg" alt="Andorra B&B" />
+			<div id="imageoverlay">
+				<div id="overlayA">
+					<h1>Book a room at Andorra<br>Bed & Breakfast</h1>
 				</div>
 			</div>
 		</div>
-		<div id="bookNowMain">
+		<div id="bookNowMain" class="pageMain">
 			Here is the booking form for Andorra B&B, hosted by <a href="www.booking.com">www.Booking.com</a>
 		</div>
 	</div>

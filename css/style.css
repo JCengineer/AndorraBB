@@ -1,50 +1,51 @@
+/*copyright james clifford 2013 for Andorra B&B, Dublin, Ireland www.andorrabb.com, www.jc-ae.com
+ */
 * {
   margin: 0;
-  padding: 0; 
-  }
+}
 
 @font-face {
   font-family: "AlexBrush";
-src: url("../fonts/AlexBrush-Regular.ttf");}
+  src: url("../fonts/AlexBrush-Regular.ttf");}
 
 #bodydiv {
   background-color: #fff9fc;
   height: 85%;
   overflow: auto;
 }
+#bodydiv h1 {
+  font-size: 50px;}
+#bodydiv h2 {
+  font-size: 40px;}
+#bodydiv h3 {
+  font-size: 30px;}
 
-#top{
+#imageandtextHome {
+  color: #ffffff; 
   overflow: hidden;
-  position: relative;
-}
+  position: relative;}
+  #imageandtextHome #imagemain {
+    width: 90%;
+    float: left;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;}
 #imageandtext {
   color: #ffffff; 
   overflow: hidden;
-  position: relative;
-  height: 100%;
-  min-width: 100%;}
-  #imageandtext #imagemain {
-    height: 100%;
-    padding-left: 5%;
-    padding-right: 5%;}
-#imageandtextB {
-  color: #ffffff; 
-  overflow: hidden;
-  position: relative;
-  height: 100%;}
-  #imageandtextB #imageband {
-    position: absolute;
-    clip: rect(327px, 800px, 547px, 0px);
-    top:-327px;
-    height: 100%;
+  position: relative;}
+  #imageandtext #imageband {
+    width: 90%;
+    float: left;
+    position: relative;
     padding-left: 5%;
     padding-right: 5%;}
     
     #imageoverlay {
       z-index: 1;
-      text-align: right;
-      right: 5%;
-      top: 10%;
+      left: 5%;
+      float: left;  
+      min-width: 260px;
       position: absolute;}
       #imageoverlay #overlayA{
         padding: 2%;
@@ -58,10 +59,11 @@ src: url("../fonts/AlexBrush-Regular.ttf");}
         /* fallback */
         background-color: #ffffff;
         background-repeat: repeat-y;
-        background: rgba(255,255,255, .85);}
+        background: rgba(255,255,255, .6);}
       
-
-
+.pageMain{
+  padding: 5%;
+}
 
 #accordionWrapper{
   overflow: hidden;
@@ -73,7 +75,7 @@ src: url("../fonts/AlexBrush-Regular.ttf");}
   padding: 10%;}
   #accordion .acLink{
     position:relative;
-    left: 90%;}
+    left: 88%;}
 .ui-widget{
   font-size: 1em;
 }
@@ -110,3 +112,8 @@ src: url("../fonts/AlexBrush-Regular.ttf");}
     margin-right: 1%;
     /*background-color: #990020;*/
   }
+
+
+
+
+  /*jQueryUI styling*/

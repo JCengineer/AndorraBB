@@ -18,19 +18,15 @@
 
 <body>
 	<div id="bodydiv">
-		<div id="top">
-			
-		<!--  First Column -->
-			<div id="imageandtext">
-				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B" />
-				<div id="imageoverlay">
-					<div id="overlayA">
-						<h1>Facilities of Andorra<br>Bed & Breakfast</h1>
-					</div>
+		<div id="imageandtext">
+			<img id="imageband" src="images\houseband.jpg" alt="Andorra B&B" />
+			<div id="imageoverlay">
+				<div id="overlayA">
+					<h1>Facilities of Andorra<br>Bed & Breakfast</h1>
 				</div>
 			</div>
 		</div>
-		<div id="FacilitiesMain">
+		<div id="FacilitiesMain" class="pageMain">
 			We have lots of facilities in each room:
 			<img id="roomFacilitiesImage" src="images\roomFacilities.jpg" alt="Facilities in rooms" /><br>
 			We have lots of facilities in the locale:

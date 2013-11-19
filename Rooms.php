@@ -18,19 +18,15 @@
 
 <body>
 	<div id="bodydiv">
-		<div id="top">
-			
-		<!--  First Column -->
-			<div id="imageandtext">
-				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B" />
-				<div id="imageoverlay">
-					<div id="overlayA">
-						<h1>Rooms in Andorra<br>Bed & Breakfast</h1>
-					</div>
+		<div id="imageandtext">
+			<img id="imageband" src="images\houseband.jpg" alt="Andorra B&B" />
+			<div id="imageoverlay">
+				<div id="overlayA">
+					<h1>Rooms in Andorra<br>Bed & Breakfast</h1>
 				</div>
 			</div>
 		</div>
-		<div id="RoomsMain">
+		<div id="RoomsMain" class="pageMain">
 			We have 4 rooms in the house.<br>
 			<img id="roomMainImage" src="images\roomMainImage.jpg" alt="Andorra Room Main" /><br>
 			A first floor double and single room en suite.<br>

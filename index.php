@@ -1,9 +1,9 @@
-<!-- copyright james clifford 2013 for Andorra B&B, Dublin, Ireland www.andorrabb.com, www.jc-ae--> 
+<!-- copyright james clifford 2013 for Andorra B&B, Dublin, Ireland www.andorrabb.com, www.jc-ae.com--> 
 <html>
 <head>
 	<title>Andorra B&B - Dublin, Ireland</title>
+	<link rel="stylesheet" href="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/themes/AndorraColours/jquery.ui.all.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/themes/base/jquery.ui.all.css">
 	<script src="../../AndorraBB/libs/jquery-1.10.2.min.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.core.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.widget.js"></script>
@@ -18,11 +18,13 @@
 
 <body>
 	<div id="bodydiv">
+
+		<script src="../../AndorraBB/scripts/UI.js"></script>
+
 		<div id="top">
 			
 		<!--  First Column -->
-			<div id="imageandtext">
-				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B"/>
+			<div id="imageandtextHome">
 				<div id="imageoverlay">
 					<div id="overlayA">
 						<h1> 
@@ -38,6 +40,7 @@
 						<h3>Comfortable and homely<br>guest accommodation</h3>
 					</div>
 				</div>
+				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B"/>
 			</div>
 		</div>
 		<div id="accordionWrapper">

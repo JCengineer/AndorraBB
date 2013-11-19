@@ -18,19 +18,15 @@
 
 <body>
 	<div id="bodydiv">
-		<div id="top">
-			
-		<!--  First Column -->
-			<div id="imageandtext">
-				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B" />
-				<div id="imageoverlay">
-					<div id="overlayA">
-						<h1>Friends of Andorra<br>Bed & Breakfast</h1>
-					</div>
+		<div id="imageandtext">
+			<img id="imageband" src="images\houseband.jpg" alt="Andorra B&B" />
+			<div id="imageoverlay">
+				<div id="overlayA">
+					<h1>Friends of Andorra<br>Bed & Breakfast</h1>
 				</div>
 			</div>
 		</div>
-		<div id="AffliatesMain">
+		<div id="AffliatesMain" class="pageMain">
 			AirCoach...<br>
 			<img id="affiliateImage" src="images\Affiliate.jpg" alt="Affliate1" /><br>
 			RDS...<br>

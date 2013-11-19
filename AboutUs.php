@@ -18,19 +18,16 @@
 
 <body>
 	<div id="bodydiv">
-		<div id="top">
-			
-		<!--  First Column -->
-			<div id="imageandtextB">
-				<img id="imageband" src="images\housemain.jpg" alt="Home image Andorra B&B" />
-				<div id="imageoverlay">
-					<div id="overlayA">
-						<h1>About Andorra<br>Bed & Breakfast</h1>
-					</div>
+		<div id="imageandtext">
+			<img id="imageband" src="images\houseband.jpg" alt="Andorra B&B" />
+			<div id="imageoverlay">
+				<div id="overlayA">
+					<h1>About Andorra<br>Bed & Breakfast</h1>
 				</div>
 			</div>
 		</div>
-		<div id="AboutUsMain">
+		
+		<div id="AboutUsMain" class="pageMain">
 			Nuala Clifford is the proprietor of the house, manages the beds and the breakfasts.<br>
 			Fionan Clifford is the head chef by morning and quantity surveyor by afternoon.<br>
 			Eugene and James are their sons and they help out sometimes. :D ***<br>
