@@ -16,6 +16,13 @@ function getImgSize(imgSrc) {
 	newImg.src = imgSrc; // this must be done AFTER setting onload
 }
 
+initialiseUI = function(){
+	console.log("initialising UI");
+	$("button").button();
+
+
+}
+
 updateUI = function(){
 	w = $('#imagemain').width();
 	h = $('#imagemain').height();
@@ -29,6 +36,8 @@ $(window).resize(function() {
 	console.log("resize event");
 	updateUI();
 });
+
+$(window).load( function(){ initialiseUI();});
 
 return {
 	updateUI: updateUI

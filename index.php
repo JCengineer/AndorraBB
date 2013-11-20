@@ -8,6 +8,7 @@
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.core.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.widget.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.accordion.js"></script>
+	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.button.js"></script>
 	<!--link rel="stylesheet" href="../libs/demos.css"-->
 	<script>
 		$(function() {
@@ -32,12 +33,12 @@
 							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
 							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
 							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
-							Andorra <br> Bed & Breakfast </h1>
-						<h2> Nuala & Fionan Clifford </h2>
-						<h3> 94 Merrion Road, Ballsbridge,<br>Dublin 4, Ireland </h3>
+							Andorra Bed & Breakfast </h1>
+						<!--h2> Nuala & Fionan Clifford </h2>
+						<h3> 94 Merrion Road, Ballsbridge,<br>Dublin 4, Ireland </h3-->
 					</div>
 					<div id="overlayB">
-						<h3>Comfortable and homely<br>guest accommodation</h3>
+						<h3>Comfortable and homely guest accommodation</h3>
 					</div>
 				</div>
 				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B"/>
