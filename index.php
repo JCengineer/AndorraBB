@@ -20,28 +20,43 @@
 <body>
 	<div id="bodydiv">
 
-		<script src="../../AndorraBB/scripts/UI.js"></script>
 
 		<div id="top">
 			
 		<!--  First Column -->
 			<div id="imageandtextHome">
-				<div id="imageoverlay">
-					<div id="overlayA">
+				<div id="headings">
+					<div id="headingA">
 						<h1> 
 							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
 							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
 							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
 							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
-							Andorra Bed & Breakfast </h1>
+							Andorra <br> Bed & Breakfast </h1>
 						<!--h2> Nuala & Fionan Clifford </h2>
 						<h3> 94 Merrion Road, Ballsbridge,<br>Dublin 4, Ireland </h3-->
 					</div>
-					<div id="overlayB">
+					<div id="headingB">
 						<h3>Comfortable and homely guest accommodation</h3>
+					</div>
+					<div id="leftOptions">
+						<button id="aboutUs" class="button" onclick="location.href='AboutUs.php';">
+							About Us
+						</button>
+						<button id="contactUs" class="button" onclick="location.href='ContactUs.php';">
+							Contact Us
+						</button>
+						<button id="blog" class="button" onclick="location.href='News.php';">
+							News
+						</button>
+						<button id="friends" class="button" onclick="location.href='Affiliates.php';">
+							Friends
+						</button>
 					</div>
 				</div>
 				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B"/>
+				<div id="imageOverlay">
+				</div>
 			</div>
 		</div>
 		<div id="accordionWrapper">
@@ -69,7 +84,7 @@
 				<h3 id="acH3">Location</h3>
 				<div>
 					<p>
-				 	You will stay in a picturesque location, near to many popular area. <br> Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+				 	You will stay in a picturesque location, near to many popular areas. <br> Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
 					Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
 					ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
 					lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
@@ -104,6 +119,11 @@
 	<div id="footerdiv">
 		<?php include ('footer.php'); ?>
 	</div>
+
+
+	<script src="../../AndorraBB/scripts/UI.js"></script>
+
+
 </body>
 <footer></footer>
 </html>

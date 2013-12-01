@@ -18,10 +18,37 @@ function getImgSize(imgSrc) {
 
 initialiseUI = function(){
 	console.log("initialising UI");
+	$("#imageOverlay").hide();
 	$("button").button();
-
-
+	$('#leftOptions button').removeAttr('onclick');
 }
+
+$("#leftOptions button").on('click',function(e){
+	var id = e.target.id;
+	console.log("toggling");
+	
+	if ($("#"+id).hasClass("showingRight")){
+		$("#imageOverlay").hide(500);
+		$("#imageOverlay").html("");
+		$("#"+id).removeClass("showingRight")
+	} else {
+		$("#imageOverlay").show(500, function(){
+			if (id == "aboutUs") {
+				$("#imageOverlay").html("Test aboutUs");
+				$("#"+id).addClass("showingRight");
+			} else if (id == "contactUs") {
+				$("#imageOverlay").html("Test contactUs");
+				$("#"+id).addClass("showingRight");
+			} else if (id == "blog") {
+				$("#imageOverlay").html("Test blog");
+				$("#"+id).addClass("showingRight");
+			} else if (id == "friends") {
+				$("#imageOverlay").html("Test friends");
+				$("#"+id).addClass("showingRight");
+			}
+		});
+	}
+});
 
 updateUI = function(){
 	w = $('#imagemain').width();
