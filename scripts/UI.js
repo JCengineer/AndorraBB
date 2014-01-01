@@ -3,12 +3,12 @@
 
 var UI = (function(){
 
-	var imgW = 0, imgH = 0, w = 0, h=0;//image sizing variables
+	var imgW = 0, imgH = 0;//image sizing variables
 
 function getImgSize(imgSrc) {
-	    var newImg = new Image();
+    var newImg = new Image();
 
-	    newImg.onload = function() {
+    newImg.onload = function() {
 	    imgH = newImg.height;
 	    imgW = newImg.width;
 	    console.log('The image size is '+imgW+'x'+imgH);
@@ -18,32 +18,51 @@ function getImgSize(imgSrc) {
 
 initialiseUI = function(){
 	console.log("initialising UI");
+
+	//getting imagemain's image size
+	getImgSize("images/housemain.jpg");
+
 	$("#imageOverlay").hide();
 	$("button").button();
-	$('#leftOptions button').removeAttr('onclick');
+	$('#leftMenuBar button').removeAttr('onclick');
 }
 
-$("#leftOptions button").on('click',function(e){
-	var id = e.target.id;
-	console.log("toggling");
+$("#leftMenuBar button").on('click',function(e){
+	var id = this.id;
+	console.log(e.target, "verses", this);
+	console.log("toggling element #"+id+" with "+$("#"+id).hasClass("showingRight")+" showingRight class.");
 	
 	if ($("#"+id).hasClass("showingRight")){
 		$("#imageOverlay").hide(500);
 		$("#imageOverlay").html("");
 		$("#"+id).removeClass("showingRight")
 	} else {
+		$("#leftMenuBar .showingRight").removeClass("showingRight");
 		$("#imageOverlay").show(500, function(){
 			if (id == "aboutUs") {
-				$("#imageOverlay").html("Test aboutUs");
+				$("#imageOverlay :not(#infoAboutUs)").hide();
+				$("#imageOverlay #infoAboutUs").show();
 				$("#"+id).addClass("showingRight");
-			} else if (id == "contactUs") {
-				$("#imageOverlay").html("Test contactUs");
+			} else if (id == "bookNow") {
+				$("#imageOverlay").html("Test booknow");
 				$("#"+id).addClass("showingRight");
-			} else if (id == "blog") {
+			} else if (id == "rooms") {
+				$("#imageOverlay").html("Test rooms");
+				$("#"+id).addClass("showingRight");
+			} else if (id == "facilities") {
+				$("#imageOverlay").html("Test facilities");
+				$("#"+id).addClass("showingRight");
+			}  else if (id == "location") {
+				$("#imageOverlay").html("Test location ");
+				$("#"+id).addClass("showingRight");
+			} else if (id == "news") {
 				$("#imageOverlay").html("Test blog");
 				$("#"+id).addClass("showingRight");
 			} else if (id == "friends") {
 				$("#imageOverlay").html("Test friends");
+				$("#"+id).addClass("showingRight");
+			} else if (id == "contactUs") {
+				$("#imageOverlay").html("Test contactUs");
 				$("#"+id).addClass("showingRight");
 			}
 		});
@@ -51,11 +70,18 @@ $("#leftOptions button").on('click',function(e){
 });
 
 updateUI = function(){
-	w = $('#imagemain').width();
-	h = $('#imagemain').height();
-	getImgSize("images/housemain.jpg");
+	//resize header and image if below min size
+	var bodyW = $('body').width();
+	bodyH = $('body').height();
+	if (bodyW <= 1000){
+		//make header width = 100% and underneath then, image width 100%
+
+	}
+	oldImgW = $('#imagemain').width();
+	oldImgH = $('#imagemain').height();
+	
 	var aspectRatio = imgW/imgH;
-	var newH = w/aspectRatio;
+	var newH = oldImgW/aspectRatio;
 	$('#imagemain').css('height',newH);
 }
 

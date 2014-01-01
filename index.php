@@ -28,10 +28,10 @@
 				<div id="headings">
 					<div id="headingA">
 						<h1> 
-							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
-							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
-							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
-							<img id="stars" src="images\star.gif" alt="4 Star Andorra B&B"/>
+							<img id="stars" src="images\star.png" alt="4 Star Andorra B&B"/>
+							<img id="stars" src="images\star.png" alt="4 Star Andorra B&B"/>
+							<img id="stars" src="images\star.png" alt="4 Star Andorra B&B"/>
+							<img id="stars" src="images\star.png" alt="4 Star Andorra B&B"/>
 							Andorra <br> Bed & Breakfast </h1>
 						<!--h2> Nuala & Fionan Clifford </h2>
 						<h3> 94 Merrion Road, Ballsbridge,<br>Dublin 4, Ireland </h3-->
@@ -39,83 +39,138 @@
 					<div id="headingB">
 						<h3>Comfortable and homely guest accommodation</h3>
 					</div>
-					<div id="leftOptions">
-						<button id="aboutUs" class="button" onclick="location.href='AboutUs.php';">
-							About Us
-						</button>
-						<button id="contactUs" class="button" onclick="location.href='ContactUs.php';">
-							Contact Us
-						</button>
-						<button id="blog" class="button" onclick="location.href='News.php';">
-							News
-						</button>
-						<button id="friends" class="button" onclick="location.href='Affiliates.php';">
-							Friends
-						</button>
+					<div id="leftMenuBar">
+						<button id="aboutUs" class="button" title="About Andorra B&B" onclick="location.href='AboutUs.php';">
+							About us</button>
+						<button id="bookNow" class="button" title="Book with us now" onclick="location.href='BookNow.php';">
+							Book Now</button>
+						<button id="rooms" class="button" title="Our guestrooms" onclick="location.href='Rooms.php';">
+							Rooms</button>
+						<button id="facilities" class="button" title="Our facilities" onclick="location.href='ContactUs.php';">
+							Facilities</button>
+						<button id="location" class="button" title="The location" onclick="location.href='Location.php';">
+							Location</button>
+						<button id="news" class="button" title="News, events and blog" onclick="location.href='News.php';">
+							News</button>
+						<button id="friends" class="button" title="Friends, local services and deals" onclick="location.href='Affiliates.php';">
+							Friends</button>
+						<button id="contactUs" class="button" title="Contact us by email, phone or form" onclick="location.href='ContactUs.php';">
+							Contact Us</button>
 					</div>
 				</div>
-				<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B"/>
-				<div id="imageOverlay">
-				</div>
-			</div>
-		</div>
-		<div id="accordionWrapper">
-			<div id="accordion">
-				<h3 id="acH1">Rooms</h3>
-				<div>
-					<p>
-					You have a choice of 4 comfortable and homely rooms. <br> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-					ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-					amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-					odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-					</p><br>
-					<a href="Rooms.php" class="acLink">More info</a>
-				</div>
-				<h3 id="acH2">Facilities</h3>
-				<div>
-					<p>
-					You will have multiple facilities in the room and in the area. <br> Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-					purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-					velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-					suscipit faucibus urna.
-					</p><br>
-					<a href="Facilities.php" class="acLink">More info</a>
-				</div>
-				<h3 id="acH3">Location</h3>
-				<div>
-					<p>
-				 	You will stay in a picturesque location, near to many popular areas. <br> Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-					Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-					ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-					lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-					</p>
-					<ul>
-						<li>List item one</li>
-						<li>List item two</li>
-						<li>List item three</li>
-					</ul><br>
-					<a href="Location.php" class="acLink">More info</a>
-				</div>
-				<h3 id="acH4">Book now</h3>
-				<div>
-					<p>
-					Use our booking form to secure your accommodation at Andorra today. <br>
-					Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-					et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-					faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-					mauris vel est.
-					</p>
-					<p>
-					Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-					Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-					inceptos himenaeos.
-					</p><br>
-					<a href="BookNow.php" class="acLink">More info</a>
-				</div>
-
-			</div>
-		</div>
-	</div>
+				<div id="imageAndOverlay">
+					<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B"/>
+					<div id="imageOverlay">
+						<div id="infoAboutUs">
+							<h3 id="ovH1">About Andorra B&B</h3>
+							<p>
+							Andorra B&B has been established since *****. Nuala and Fionan Clifford have been
+							running the guesthouse since 1994 with their two sons, James and Eugene.<br> 
+							Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+							purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+							velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+							suscipit faucibus urna.
+							</p><br>
+							<a href="AboutUs.php" class="ovLink">More info</a>
+						</div>
+						<div id="infoBook">
+							<h3 id="ovH2">Book with us now</h3>
+							<p>
+							Use our booking form to secure your accommodation at Andorra today. <br>
+							Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+							et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+							faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+							mauris vel est.
+							</p>
+							<p>
+							Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+							Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+							inceptos himenaeos.
+							</p><br>
+							<a href="BookNow.php" class="ovLink">More info</a>
+						</div>
+						<div id="infoRooms">
+							<h3 id="ovH3">Our guestrooms</h3>
+							<p>
+							You have a choice of 4 comfortable and homely rooms. <br> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+							ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+							amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+							odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+							</p><br>
+							<a href="Rooms.php" class="ovLink">More info</a>
+						</div>
+						<div id="infoFacilities">
+							<h3 id="ovH4">Our facilities</h3>
+							<p>
+							You will have multiple facilities in the room and in the area. <br> Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+							purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+							velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+							suscipit faucibus urna.
+							</p><br>
+							<a href="Facilities.php" class="ovLink">More info</a>
+						</div>
+						<div id="infoLocation">
+							<h3 id="ovH5">The location</h3>
+							<p>
+						 	You will stay in a picturesque location, near to many popular areas. <br> Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+							Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+							ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+							lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+							</p>
+							<ul>
+								<li>List item one</li>
+								<li>List item two</li>
+								<li>List item three</li>
+							</ul><br>
+							<a href="Location.php" class="ovLink">More info</a>
+						</div>
+						<div id="infoNews">
+							<h3 id="ovH6">News, events and blog</h3>
+							<p>
+							Due to the amenities in the location, we are always busy with local events.
+							<br> Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+							ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+							amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+							odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+							</p><br>
+							<a href="News.php" class="ovLink">More info</a>
+						</div>
+						<div id="infoFriends">
+							<h3 id="ovH7">Friends, local services and deals</h3>
+							<p>
+						 	You will stay in a picturesque location, near to many popular areas. <br> Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+							Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+							ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+							lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+							</p>
+							<ul>
+								<li>List item one</li>
+								<li>List item two</li>
+								<li>List item three</li>
+							</ul><br>
+							<a href="Affiliates.php" class="ovLink">More info</a>
+						</div>
+						<div id="infoContact">
+							<h3 id="ovH8">Contact us by email, phone or form</h3>
+							<p>
+							Use our contact form, email or phone number to contact us at Andorra today. <br>
+							Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+							et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+							faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+							mauris vel est.
+							</p>
+							<p>
+							Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+							Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+							inceptos himenaeos.
+							</p><br>
+							<a href="ContactUs.php" class="ovLink">More info</a>
+						</div>
+					</div>
+				</div><!--imageoverlay-->
+			</div><!--imageandtexthome-->
+		</div><!--top-->
+	</div><!--body-->
 	<div id="footerdiv">
 		<?php include ('footer.php'); ?>
 	</div>
