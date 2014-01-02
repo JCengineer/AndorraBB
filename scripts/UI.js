@@ -25,6 +25,14 @@ initialiseUI = function(){
 	$("#imageOverlay").hide();
 	$("button").button();
 	$('#leftMenuBar button').removeAttr('onclick');
+
+	$('#gallery').magnificPopup({
+		delegate: 'img',
+		type: 'image',
+		gallery:{enabled:true}
+	});
+
+	responsiveLayout();
 }
 
 $("#leftMenuBar button").on('click',function(e){
@@ -34,55 +42,76 @@ $("#leftMenuBar button").on('click',function(e){
 	
 	if ($("#"+id).hasClass("showingRight")){
 		$("#imageOverlay").hide(500);
-		$("#imageOverlay").html("");
 		$("#"+id).removeClass("showingRight")
 	} else {
 		$("#leftMenuBar .showingRight").removeClass("showingRight");
 		$("#imageOverlay").show(500, function(){
 			if (id == "aboutUs") {
-				$("#imageOverlay :not(#infoAboutUs)").hide();
-				$("#imageOverlay #infoAboutUs").show();
+				$("#imageOverlay div:not(#infoAbout)").hide();
+				$("#imageOverlay #infoAbout").show();
 				$("#"+id).addClass("showingRight");
 			} else if (id == "bookNow") {
-				$("#imageOverlay").html("Test booknow");
+				$("#imageOverlay div:not(#infoBook)").hide();
+				$("#imageOverlay #infoBook").show();
 				$("#"+id).addClass("showingRight");
 			} else if (id == "rooms") {
-				$("#imageOverlay").html("Test rooms");
+				$("#imageOverlay div:not(#infoRooms)").hide();
+				$("#imageOverlay #infoRooms").show();
 				$("#"+id).addClass("showingRight");
 			} else if (id == "facilities") {
-				$("#imageOverlay").html("Test facilities");
+				$("#imageOverlay div:not(#infoFacilities)").hide();
+				$("#imageOverlay #infoFacilities").show();
 				$("#"+id).addClass("showingRight");
 			}  else if (id == "location") {
-				$("#imageOverlay").html("Test location ");
+				$("#imageOverlay div:not(#infoLocation)").hide();
+				$("#imageOverlay #infoLocation").show();
 				$("#"+id).addClass("showingRight");
 			} else if (id == "news") {
-				$("#imageOverlay").html("Test blog");
+				$("#imageOverlay div:not(#infoNews)").hide();
+				$("#imageOverlay #infoNews").show();
 				$("#"+id).addClass("showingRight");
 			} else if (id == "friends") {
-				$("#imageOverlay").html("Test friends");
+				$("#imageOverlay div:not(#infoFriends)").hide();
+				$("#imageOverlay #infoFriends").show();
 				$("#"+id).addClass("showingRight");
 			} else if (id == "contactUs") {
-				$("#imageOverlay").html("Test contactUs");
+				$("#imageOverlay div:not(#infoContact)").hide();
+				$("#imageOverlay #infoContact").show();
 				$("#"+id).addClass("showingRight");
 			}
 		});
 	}
 });
 
+$("#gallery img").on('hover', function(e){
+	console.log("Change Gallery title => title + description of photo");
+});
+
 updateUI = function(){
 	//resize header and image if below min size
-	var bodyW = $('body').width();
-	bodyH = $('body').height();
-	if (bodyW <= 1000){
-		//make header width = 100% and underneath then, image width 100%
+	responsiveLayout();
 
-	}
 	oldImgW = $('#imagemain').width();
 	oldImgH = $('#imagemain').height();
 	
 	var aspectRatio = imgW/imgH;
 	var newH = oldImgW/aspectRatio;
 	$('#imagemain').css('height',newH);
+}
+
+responsiveLayout = function(){
+	var bodyW = $('body').width();
+	bodyH = $('body').height();
+	if (bodyW >= 1111 || ( $('#imageAndTextHome #headings').width() == "100%" && bodyW > 1111 ) ){
+		$('#bodydiv').css({overflow: "hidden"});
+		$('#imageAndTextHome #headings').width("40%");
+		$('#imageAndTextHome #imageAndOverlay').width("60%");
+		$('#bodydiv').css({overflow: "auto"});
+	} else {
+		//make header width = 100% and underneath then, image width 100%
+		$('#imageAndTextHome #headings').width("100%");
+		$('#imageAndTextHome #imageAndOverlay').width("100%");
+	}
 }
 
 $(window).resize(function() {

@@ -1,3 +1,7 @@
-<span id="thankYouText"> Thank you for visiting Andorrabb.com. We hope to see you soon. </span>
+<span id="thankYouText"> Thank you for visiting Andorrabb.com.
+	We hope to see you soon.
+	94 Merrion Road, Ballsbridge, Dublin 4.
+	+353 1 6689666 / enquiries@andorrabb.com
+	</span>
 <button id="homeButton" class="button" onclick="location.href='index.php';">Home</button>
 <!--span id="expandFooterIcon" class="ui-icon ui-icon-carat-1-n"></span-->

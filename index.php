@@ -3,12 +3,15 @@
 <head>
 	<title>Andorra B&B - Dublin, Ireland</title>
 	<link rel="stylesheet" href="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/themes/AndorraColours/jquery.ui.all.css">
+	<link rel="stylesheet" href="libs/magnific-popup/mp.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	<script src="../../AndorraBB/libs/jquery-1.10.2.min.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.core.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.widget.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.accordion.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.button.js"></script>
+	<script src="libs/magnific-popup/mp.js"></script> 
 	<!--link rel="stylesheet" href="../libs/demos.css"-->
 	<script>
 		$(function() {
@@ -61,7 +64,9 @@
 				<div id="imageAndOverlay">
 					<img id="imagemain" src="images\housemain.jpg" alt="Home image Andorra B&B"/>
 					<div id="imageOverlay">
-						<div id="infoAboutUs">
+
+
+						<div id="infoAbout">
 							<h3 id="ovH1">About Andorra B&B</h3>
 							<p>
 							Andorra B&B has been established since *****. Nuala and Fionan Clifford have been
@@ -168,8 +173,57 @@
 						</div>
 					</div>
 				</div><!--imageoverlay-->
+
+
 			</div><!--imageandtexthome-->
 		</div><!--top-->
+		<div id="content">
+
+
+			<div id="testimonials">
+				<span class="quote">"...Fabulous room with so much space! ... Friendly hosts and great breakfasts..."<br></span>
+				<span class="author">- John, Kildare, Sept '12</span>
+			</div><!--testimonials-->
+
+
+			<div id="gallery" class="gallery">
+				<h3>Gallery</h3>
+				<img id="image1" class="image" src="images/image1.jpg" 
+					href="images/image1.jpg" title="Image 1 of Andorra B&B"></img>
+				<img id="image2" class="image" src="images/image2.jpg" 
+					href="images/image2.jpg" title="image2"></img>
+				<img id="image1" class="image" src="images/image1.jpg" 
+					href="images/image1.jpg" title="image1"></img>
+				<img id="image2" class="image" src="images/image2.jpg" 
+					href="images/image2.jpg" title="image2"></img>
+				<img id="image1" class="image" src="images/image1.jpg" 
+					href="images/image1.jpg" title="Image 1 of Andorra B&B"></img>
+				<img id="image2" class="image" src="images/image2.jpg" 
+					href="images/image2.jpg" title="image2"></img>
+				<img id="image1" class="image" src="images/image1.jpg" 
+					href="images/image1.jpg" title="image1"></img>
+				<img id="image2" class="image" src="images/image2.jpg" 
+					href="images/image2.jpg" title="image2"></img>
+				<img id="image1" class="image" src="images/image1.jpg" 
+					href="images/image1.jpg" title="Image 1 of Andorra B&B"></img>
+				<img id="image2" class="image" src="images/image2.jpg" 
+					href="images/image2.jpg" title="image2"></img>
+				<img id="image1" class="image" src="images/image1.jpg" 
+					href="images/image1.jpg" title="image1"></img>
+				<img id="image2" class="image" src="images/image2.jpg" 
+					href="images/image2.jpg" title="image2"></img>
+				<img id="image1" class="image" src="images/image1.jpg" 
+					href="images/image1.jpg" title="Image 1 of Andorra B&B"></img>
+				<img id="image2" class="image" src="images/image2.jpg" 
+					href="images/image2.jpg" title="image2"></img>
+				<img id="image1" class="image" src="images/image1.jpg" 
+					href="images/image1.jpg" title="image1"></img>
+				<img id="image2" class="image" src="images/image2.jpg" 
+					href="images/image2.jpg" title="image2"></img>
+			</div><!--gallery-->
+
+
+		</div><!--content-->
 	</div><!--body-->
 	<div id="footerdiv">
 		<?php include ('footer.php'); ?>
