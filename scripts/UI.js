@@ -4,7 +4,7 @@
 var UI = (function(){
 
 	var imgW = 0, imgH = 0, overlayH = 0;//image sizing variables
-	var LayoutIsVertical = false;
+	var LayoutIsVertical = true;
 
 	
 
@@ -57,7 +57,7 @@ var UI = (function(){
 		if ($("#"+id).hasClass("showingRight")){
 			$("#imageOverlay").hide();
 			$("#"+id).removeClass("showingRight")
-			$('#imageAndOverlay').height( (LayoutIsVertical)?'auto':'auto' );
+			$('#imageAndOverlay').height( 'auto' );
 		} else {
 			$("#leftMenuBar .showingRight").removeClass("showingRight");
 			$("#imageOverlay").show(function(){
@@ -124,20 +124,20 @@ var UI = (function(){
 		var bodyW = $('body').width();
 		var bodyH = $('body').height();
 		$('bodydiv').height( bodyH - $('footerdiv').height() );
-		if (bodyW >= 1111 || ( ($('#imageAndTextHome #headings').width() == "100%") && (bodyW > 1111) ) ){
+		/*if (bodyW >= 1111 || ( ($('#imageAndTextHome #headings').width() == "100%") && (bodyW > 1111) ) ){
 			LayoutIsVertical = false;
 			$('#bodydiv').css({overflow: "hidden"});
 			$('#imageAndTextHome #headings').width("40%");
 			$('#imageAndTextHome #imageAndOverlay').width("60%");
 			$('#imageAndTextHome #imageAndOverlay').height("98%");
 			$('#bodydiv').css({overflow: "auto"});
-		} else {
+		} else {*/
 			//make header width = 100% and underneath then, image width 100%
 			$('#imageAndTextHome #headings').width("100%");
 			$('#imageAndTextHome #imageAndOverlay').width("100%");
 			$('#imageAndTextHome #imageAndOverlay').height("auto");
 			LayoutIsVertical = true;
-		}
+		/*}*/
 		$('#testimonials #manual').width( bodyW - $('#testimonials #tripadvisorwidget').width() - 40);
 
 		//resize header and image if below min size
