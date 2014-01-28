@@ -10,7 +10,7 @@
 
 #bodydiv {
   background-color: #fff9fc;
-  height: 95%;
+  height: 100%;
   overflow: auto;
 }
 #bodydiv h1 {
@@ -70,14 +70,15 @@ a {
   #imageandtextHome #imageAndOverlay {
     width:60%;
     min-width: 400px;
+    max-width: 1000px;
     float: left;
     position: relative;}
     #imageAndOverlay #imagemain {
-      width: 98%;
+      width: 96%;
       float: left;
       position: relative;
       overflow:hidden;
-      margin: 1%;
+      margin: 2%;
       }
     #imageAndOverlay #imageOverlay{
       color: #ffffff; 
@@ -88,6 +89,7 @@ a {
       padding: 2%;
       height:96%;
       width:96%;
+      max-width: 1000px;
 
       position: absolute;
       z-index: 1;
@@ -134,7 +136,8 @@ a {
 #content #testimonials {
   clear:both;
   margin-left:1%;
-  position: relative;}
+  position: relative;
+  margin-bottom: 55px;}
   #testimonials #manual {
     padding-top:5%;
     padding-bottom:5%;
@@ -181,7 +184,8 @@ a {
   
   overflow: hidden;
   background-color: #770010;
-  clear: both;}
+  clear: both;
+  z-index: 5;}
   #footerdiv #thankYouText{
     left: 2%;
     top: 15%;
@@ -194,12 +198,12 @@ a {
     position: absolute;
     top: 5px;
     right: 125px;
-    z-index:1;
+    z-index:10;
     background-color: #770010;}
   #footerdiv #homeButton{
     float: right;
     position: absolute;
-    top: 2%;
+    top: 1%;
     right: 1%;}
   #footerdiv #expandFooterIcon{
     color: #ffffff;

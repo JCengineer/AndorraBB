@@ -7,15 +7,15 @@
 		Close to many of Dublin's attractions like the RDS, Aviva stadium, Dublin city centre and more, Andorra B&B is perfect accommodation for a holiday break or business trip.">
 	<meta name="keywords" content="Ballsbridge Dublin Ireland guest accommodation, Dublin guest house, 4 star bed and breakfast ireland, local event RDS Aviva accommodation, book now guesthouse accommodation">
 
-	<link rel="stylesheet" href="../../AndorraBB/libs/jquery-ui-1.10.3/AndorraColours/jquery.ui.all.css">
+	<link rel="stylesheet" href="libs/jquery-ui-1.10.3/AndorraColours/jquery.ui.all.css">
 	<link rel="stylesheet" href="libs/magnific-popup/mp.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
-	<script src="../../AndorraBB/libs/jquery-1.10.2.min.js"></script>
-	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.core.js"></script>
-	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.widget.js"></script>
-	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.accordion.js"></script>
-	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.button.js"></script>
+	<script src="libs/jquery-1.10.2.min.js"></script>
+	<script src="libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.core.js"></script>
+	<script src="libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.widget.js"></script>
+	<script src="libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.accordion.js"></script>
+	<script src="libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.button.js"></script>
 
 	<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" ></script>
 	<script>window.jQuery || document.write( '<script src="../../AndorraBB/libs/jquery-1.10.2.min.js type="text/javascript"></script>')</script>
@@ -95,18 +95,6 @@
 						href="images/rooms/2b.jpg" title="Room 2: 1st floor family room, 1 double and 2 single beds."></img>
 					<img id="room2c" class="image" src="images/rooms/thumbnails/2c.jpg" 
 						href="images/rooms/2c.jpg" title="Room 2: ensuite bathroom"></img>
-					<img id="room3a" class="image" src="images/rooms/thumbnails/3a.jpg" 
-						href="images/rooms/3a.jpg" title="Room 3: First floor standard double room."></img>
-					<img id="room3b" class="image" src="images/rooms/thumbnails/3b.jpg" 
-						href="images/rooms/3b.jpg" title="Room 3: First floor standard double room."></img>
-					<img id="room3c" class="image" src="images/rooms/thumbnails/3c.jpg" 
-						href="images/rooms/3c.jpg" title="Room 3: with large private bathroom."></img>
-					<img id="room4a" class="image" src="images/rooms/thumbnails/4a.jpg" 
-						href="images/rooms/4a.jpg" title="Room 4: 2nd floor standard single room."></img>
-					<img id="room4b" class="image" src="images/rooms/thumbnails/4b.jpg" 
-						href="images/rooms/4b.jpg" title="Room 4: 2nd floor standard single room."></img>
-					<img id="room4c" class="image" src="images/rooms/thumbnails/4c.jpg" 
-						href="images/rooms/4c.jpg" title="Room 4: with adjacent private bathroom."></img>
 					<img id="room5a" class="image" src="images/rooms/thumbnails/5a.jpg" 
 						href="images/rooms/5a.jpg" title="Room 5: 2nd floor double and single."></img>
 					<img id="room5b" class="image" src="images/rooms/thumbnails/5b.jpg" 
@@ -143,7 +131,14 @@
 					<script src="http://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=209&amp;locationId=496871&amp;lang=en_IE&amp;rating=true&amp;nreviews=5&amp;writereviewlink=true&amp;popIdx=false&amp;iswide=false&amp;border=false"></script>
 				</div>
 
-				<img src="images/4starBordFailte.jpg"></img>
+				<a href="http://www.discoverireland.ie/Where-To-Stay/andorra/40832">
+					<img src="images/4starBordFailte.jpg"></img>
+				</a>
+
+				<!-- BOOKING.COM BOOK NOW BUTTON-->
+				<a href="http://www.booking.com/hotel/ie/andorra-bed-and-breakfast.html?aid=330843;lang=en" target="_blank">
+					<img src="http://aff.bstatic.com/images/affiliate/330843/booknow_en.gif" style="border: 0;" />
+				</a>
 
 
 			</div><!--testimonials-->
@@ -151,10 +146,10 @@
 			
 
 		</div><!--content-->
+		<div id="footerdiv" title="We hope to see you soon.">
+			<?php include ('footer.php'); ?>
+		</div>
 	</div><!--body-->
-	<div id="footerdiv" title="We hope to see you soon.">
-		<?php include ('footer.php'); ?>
-	</div>
 
 	<script src="../../AndorraBB/scripts/UI.js"></script>
 
