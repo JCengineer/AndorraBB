@@ -72,7 +72,7 @@
 		We also have a TV, free WiFi and electrical sockets in the room.
 		There is free parking available (please request parking in advance of arrival).
 		Cots and other room supplies are also available if needed.
-		Please the images in the gallery below.
+		Please see the images in the gallery below.
 		<br><br>
 		Andorra breakfasts are reowned by guests, family and friends of the house.
 		You will be welcomed by juices, tea, coffee, toast, cereals, yoghurts, fruit to start.

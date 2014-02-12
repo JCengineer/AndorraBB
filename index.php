@@ -45,7 +45,7 @@
 					</div>
 					<div id="headingB">
 						<h3>Comfortable and homely guest accommodation</h3>
-						<span>Welcome, Cead Mile Failte, Bienvenue, Willkommen, Bien Venido, Benenuto</span>
+						<span>Welcome, Cead Mile Failte, Bienvenue, Willkommen, Bienvenido, Benenuto</span>
 					</div>
 					<div id="leftMenuBar">
 						<button id="aboutUs" class="button" title="About Andorra B&B" onclick="location.href='AboutUs.php';">
