@@ -4,9 +4,6 @@
   margin: 0;
 }
 
-@font-face {
-  font-family: "AlexBrush";
-  src: url("../fonts/AlexBrush-Regular.ttf");}
 
 #bodydiv {
   background-color: #fff9fc;
@@ -23,50 +20,45 @@ a {
   color:#ccaa22;
 }
 
-#top #imageandtextHome {
-    color: #ffffff; 
-    
-    background-color: #501010;
-    overflow: hidden;
-    position: relative;}
-  #imageandtextHome #headings{
-    min-width: 400px;
-    width:40%;
-    text-align: center;
-    float: left;
-    position: relative;}
-    #headings #headingA{
-      margin:1%;
-      padding: 2%;
-      /* fallback */
-      background-color: #640010;
-      background-repeat: repeat-y;
-      background: rgba(100, 0, 16, .85);}
-    #headings #headingB{
-      margin:1%;
-      padding: 2%;
-      color: #640010;
-      /* fallback */
-      background-color: #ffffff;
-      background-repeat: repeat-y;
-      background: rgba(255,255,255, .9);}
-    #headings #leftMenuBar{
-      position: relative;
-      padding: 1%;
-      overflow: auto;}
-      #leftMenuBar .button{
-        color: #ffffff; 
-        font-family: AlexBrush, serif;
-        font-size: 30px;
-        position: relative;
-        margin-left: 1%;
-        margin-right: 1%;
-         
-        float:left;
-        /*width: 98%;8 down or*/
-        width: 48%;/*4 by 2 across*/}
-        .button span{
-          padding:0px; }
+#top #leftMenuBar{
+  position: relative;
+  overflow: auto;
+  width:20%;
+  float: left;
+  padding-top: 25px;
+  background-color:black;
+  height:100%;
+  color:white;}
+  #leftMenuBar #leftMenuHeader{
+    text-align: left;
+    left:5%;
+    font-size: 30px;}
+    #leftMenuHeader img {
+      width:98%;}
+  #leftMenuBar #leftMenuButtons{
+    background-color:black;
+    padding:1%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color:white;
+    overflow: auto;}
+  #leftMenuButtons .button{
+    color: #ffffff;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+    margin-left: 1%;
+    margin-right: 1%;
+    float:left;
+    width: 98%;}
+    .button span{
+      padding:0px; }
+  #leftMenuBar #leftMenuSocial{
+    background-color:black;
+    position: absolute;
+    left:5%;
+    bottom:80px;
+    color:white;}
   #imageandtextHome #imageAndOverlay {
     width:60%;
     min-width: 400px;
@@ -183,7 +175,9 @@ a {
   bottom: 0px;
   
   overflow: hidden;
-  background-color: #770010;
+  background-color: black;
+  border-top-style: solid;
+  border-top-color: #009900;
   clear: both;
   z-index: 5;}
   #footerdiv #thankYouText{
@@ -199,7 +193,7 @@ a {
     top: 5px;
     right: 125px;
     z-index:10;
-    background-color: #770010;}
+    background-color: black;}
   #footerdiv #homeButton{
     float: right;
     position: absolute;
