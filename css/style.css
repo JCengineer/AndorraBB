@@ -11,7 +11,6 @@
 #bodydiv {
   background-color: #fff9fc;
   height: 100%;
-  overflow: auto;
 }
 #bodydiv h1 {
   font-size: 50px;}
@@ -22,11 +21,15 @@
 a {
   color:#ccaa22;
 }
+.lightBackground{
+  background-color: #fff9fc; }
+.darkBackground {
+  background-color: #501010;
+  color: #ffffff; }
+.button, .info {
+  background-color: #640010; }
 
 #top #imageandtextHome {
-    color: #ffffff; 
-    
-    background-color: #501010;
     overflow: hidden;
     position: relative;}
   #imageandtextHome #headings{
@@ -40,8 +43,7 @@ a {
       padding: 2%;
       /* fallback */
       background-color: #640010;
-      background-repeat: repeat-y;
-      background: rgba(100, 0, 16, .85);}
+      background-repeat: repeat-y;}
     #headings #headingB{
       margin:1%;
       padding: 2%;
@@ -70,7 +72,7 @@ a {
   #imageandtextHome #imageAndOverlay {
     width:100%;
     min-width: 400px;
-    max-width: 1000px;
+    max-width: 750px;
     float: left;
     position: relative;}
     #imageAndOverlay #imagemain {
@@ -81,13 +83,14 @@ a {
       margin: 2%;
       }
     #imageAndOverlay #imageOverlay{
+      display:none;
       color: #ffffff; 
       font-size: 25px;
       text-align: left;
-      overflow: auto;
+      overflow: hidden;
 
       padding: 2%;
-      height:0%;
+      height:96%;
       width:96%;
       max-width: 1000px;
 
@@ -133,12 +136,17 @@ a {
       border-color:#501010;
       padding: 1%;
       }
-#content #testimonials {
+#content #badges {
   clear:both;
-  margin-left:1%;
   position: relative;
-  margin-bottom: 55px;}
-  #testimonials #manual {
+  height:450px;
+  margin: 15px 15px 55px 15px;}
+  #badges .margin10{ margin:10px;}
+  #badges .badge { float:left;border-style: solid; border-color: #501010; }
+  #badges .padding10 { padding:10px; }
+  #badges #tripadvisorwidget {
+    width:240px;}
+  #badges #manual {
     padding-top:5%;
     padding-bottom:5%;
     width:75%;
@@ -160,12 +168,6 @@ a {
       width: 19%;
       padding-right:1%;
       text-align: right;}
-  #testimonials #tripadvisorwidget {
-    width:240px;
-    float:right;
-    position:relative;
-    border-style: solid;
-    border-color: #501010;  }
 
  
 

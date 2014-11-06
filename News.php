@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!-- copyright james clifford 2013 for Andorra B&B, Dublin, Ireland www.andorrabb.com, www.jc-ae--> 
 <html>
 <head>
@@ -8,6 +9,7 @@
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.core.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.widget.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.accordion.js"></script>
+	<script type="text/javascript" src="scripts/UI.js"></script>
 	<!--link rel="stylesheet" href="../libs/demos.css"-->
 	<script>
 		$(function() {
@@ -18,21 +20,19 @@
 
 <body>
 	<div id="bodydiv">
-		<div id="imageandtext">
-			<img id="imageband" src="images\houseband.jpg" alt="Andorra B&B" />
-			<div id="imageoverlay">
-				<div id="overlayA">
-					<h1>News from Andorra<br>Bed & Breakfast</h1>
-				</div>
+		<div id="imageandtextHome" class="darkBackground">
+			<div id="headings">
+				
+			<?php include('headings.php'); ?>
+
 			</div>
-		</div>
-		<div id="NewsMain" class="pageMain">
-			News to come:...
-		</div>
+
+			<?php include('contents/news.php'); ?>
+		</div><!--imageandtexthome-->
 	</div>
 	<div id="footerdiv">
 		<?php include ('footer.php'); ?>
+		
 	</div>
 </body>
-<footer></footer>
 </html>

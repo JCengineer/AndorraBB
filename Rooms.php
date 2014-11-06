@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <!-- copyright james clifford 2013 for Andorra B&B, Dublin, Ireland www.andorrabb.com, www.jc-ae--> 
 <html>
 <head>
@@ -8,6 +9,7 @@
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.core.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.widget.js"></script>
 	<script src="../../AndorraBB/libs/jquery-ui-1.10.3/development-bundle/ui/jquery.ui.accordion.js"></script>
+	<script type="text/javascript" src="scripts/UI.js"></script>
 	<!--link rel="stylesheet" href="../libs/demos.css"-->
 	<script>
 		$(function() {
@@ -18,30 +20,19 @@
 
 <body>
 	<div id="bodydiv">
-		<div id="imageandtext">
-			<img id="imageband" src="images\houseband.jpg" alt="Andorra B&B" />
-			<div id="imageoverlay">
-				<div id="overlayA">
-					<h1>Rooms in Andorra<br>Bed & Breakfast</h1>
-				</div>
+		<div id="imageandtextHome" class="darkBackground">
+			<div id="headings">
+				
+			<?php include('headings.php'); ?>
+
 			</div>
-		</div>
-		<div id="RoomsMain" class="pageMain">
-			We have 4 rooms in the house.<br>
-			<img id="roomMainImage" src="images\roomMainImage.jpg" alt="Andorra Room Main" /><br>
-			A first floor double and single room en suite.<br>
-			<img id="roomMainImage" src="images\roomMainImage.jpg" alt="Andorra Room A" /><br>
-			A first floor family room en suite. 1 double and 2 single beds.<br>
-			<img id="roomMainImage" src="images\roomMainImage.jpg" alt="Andorra Room B" /><br>
-			A second floor double and single room en suite.<br>
-			<img id="roomMainImage" src="images\roomMainImage.jpg" alt="Andorra Room C" /><br>
-			A second floor triple room en suite.<br>
-			<img id="roomMainImage" src="images\roomMainImage.jpg" alt="Andorra Room D" /><br>
-		</div>
+
+			<?php include('contents/rooms.php'); ?>
+		</div><!--imageandtexthome-->
 	</div>
 	<div id="footerdiv">
 		<?php include ('footer.php'); ?>
+		
 	</div>
 </body>
-<footer></footer>
 </html>

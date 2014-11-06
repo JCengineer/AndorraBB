@@ -9,7 +9,7 @@ var UI = (function(){
 	
 
 	initialiseUI = function(){
-		console.log("initialising UI");
+		//console.log("initialising UI");
 
 
 		//getting imagemain's image size
@@ -43,21 +43,22 @@ var UI = (function(){
 		    newImg.onload = function() {
 			    imgH = newImg.height;
 			    imgW = newImg.width;
-			    console.log('The image size is '+imgW+'x'+imgH);
+			    //console.log('The image size is '+imgW+'x'+imgH);
 			}
 			newImg.src = imgSrc; // this must be done AFTER setting onload
 		}
 	}
 
 	$("#leftMenuBar button").on('click',function(e){
-		console.log(e.target, "verses", this);
+		//console.log(e.target, "verses", this);
 		var id = this.id;
-		console.log("toggling element #"+id+" with "+$("#"+id).hasClass("showingRight")+" showingRight class.");
+		//console.log("toggling element #"+id+" with "+$("#"+id).hasClass("showingRight")+" showingRight class.");
 		
 		if ($("#"+id).hasClass("showingRight")){
 			$("#imageOverlay").hide();
-			$("#"+id).removeClass("showingRight")
+			$("#"+id).removeClass("showingRight");
 			$('#imageAndOverlay').height( 'auto' );
+			//$('div:has(display == "block")').hide();
 		} else {
 			$("#leftMenuBar .showingRight").removeClass("showingRight");
 			$("#imageOverlay").show(function(){
@@ -95,7 +96,8 @@ var UI = (function(){
 					$("#"+id).addClass("showingRight");
 				}
 
-				$('#bodydiv').animate({scrollTop:$('#imageOverlay').offset().top}, 500);
+				var scrollTo = $('#imageOverlay').offset().top;
+				$('body').animate({scrollTop:scrollTo}, 500);
 			});
 		}
 	});
@@ -123,7 +125,7 @@ var UI = (function(){
 	responsiveLayout = function(){
 		var bodyW = $('body').width();
 		var bodyH = $('body').height();
-		$('bodydiv').height( bodyH - $('footerdiv').height() );
+		$('bodydiv').height( bodyH - $('footerdiv').height() - 5 );
 		/*if (bodyW >= 1111 || ( ($('#imageAndTextHome #headings').width() == "100%") && (bodyW > 1111) ) ){
 			LayoutIsVertical = false;
 			$('#bodydiv').css({overflow: "hidden"});
@@ -133,12 +135,22 @@ var UI = (function(){
 			$('#bodydiv').css({overflow: "auto"});
 		} else {*/
 			//make header width = 100% and underneath then, image width 100%
-			$('#imageAndTextHome #headings').width("100%");
-			$('#imageAndTextHome #imageAndOverlay').width("100%");
-			$('#imageAndTextHome #imageAndOverlay').height("auto");
+			$('#headings').width("100%");
+			$('#imageAndOverlay').width("100%");
+			//$('#imageAndTextHome #imageAndOverlay').height("auto");
+			var w = $('#imageAndOverlay').width();
+			if ( w >= 750 ){
+				//if page is too large, display the image and overlay in the centre of the screen
+				var marginLR = (bodyW - 750) /2;
+				$('#imageAndOverlay').css('margin-left', marginLR);
+				$('#imageAndOverlay').css('margin-right', marginLR);
+			} else {
+				$('#imageAndOverlay').css('margin-left', 0);
+				$('#imageAndOverlay').css('margin-right', 0);
+			}
 			LayoutIsVertical = true;
 		/*}*/
-		$('#testimonials #manual').width( bodyW - $('#testimonials #tripadvisorwidget').width() - 40);
+		$('#badges #manual').width( bodyW - $('#badges #tripadvisorwidget').width() - 40);
 
 		//resize header and image if below min size
 		oldImgW = $('#imagemain').width();
@@ -150,19 +162,17 @@ var UI = (function(){
 	}
 
 	$(window).resize(function() {
-		console.log("resize event");
+		//console.log("resize event");
 		updateUI();
 	});
 
-	$(window).load( function(){ initialiseUI();});
+	$(window).load( function(){ 
+		initialiseUI();
+	});
 
 	return {
-		updateUI: updateUI,
-		initialiseUI:initialiseUI
+		updateUI: updateUI
 	}
 
-	$(window).load( function(){ 
-		UI.initialiseUI();
-	});
 
 }());	

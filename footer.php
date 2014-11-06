@@ -1,6 +1,6 @@
 <span id="thankYouText" title="We hope to see you soon."> 
 	<a href="//www.andorrabb.com"> 
-		Thank you for visiting AndorraBB.com
+		Thank you for visiting AndorraBB
 	</a>
 </span>
 <span id="infoText" title="We hope to see you soon.">

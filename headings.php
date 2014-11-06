@@ -10,7 +10,7 @@
 </div>
 <div id="headingB">
 	<h3>Comfortable and homely guest accommodation</h3>
-	<span>Welcome, Cead Mile Failte, Bienvenue, Willkommen, Bienvenido, Benenuto</span>
+	<span>Welcome, C&eacute;ad M&iacute;le F&aacute;ilte, Bienvenue, Willkommen, Bienvenido, Benenuto</span>
 </div>
 <div id="leftMenuBar">
 	<button id="aboutUs" class="button" title="About Andorra B&amp;B" onclick="location.href='AboutUs.php';">
@@ -19,7 +19,7 @@
 		Book Now</button>
 	<button id="rooms" class="button" title="Our guestrooms" onclick="location.href='Rooms.php';">
 		Rooms</button>
-	<button id="facilities" class="button" title="Our facilities" onclick="location.href='ContactUs.php';">
+	<button id="facilities" class="button" title="Our local facilities and amenities" onclick="location.href='ContactUs.php';">
 		Amenities</button>
 	<button id="location" class="button" title="The location" onclick="location.href='Location.php';">
 		Location</button>
