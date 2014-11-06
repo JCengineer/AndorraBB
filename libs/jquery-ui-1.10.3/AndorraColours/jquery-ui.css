@@ -45,7 +45,7 @@
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	border: 1px solid #380009;
-	background: #009900 url(images/ui-bg_flat_50_740010_40x100.png) 50% 50% repeat-x;
+	background: #740010 url(images/ui-bg_flat_50_740010_40x100.png) 50% 50% repeat-x;
 	font-weight: normal;
 	color: #fff9fc;
 }
@@ -76,7 +76,7 @@
 .ui-state-active,
 .ui-widget-content .ui-state-active,
 .ui-widget-header .ui-state-active {
-	border: 1px solid #009900;
+	border: 1px solid #740010;
 	background: #990012 url(images/ui-bg_flat_65_990012_40x100.png) 50% 50% repeat-x;
 	font-weight: normal;
 	color: #fff9fc;
