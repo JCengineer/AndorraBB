@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <span id="thankYouText" title="We hope to see you soon."> 
 	<a href="//www.andorrabb.com"> 
 		Thank you for visiting AndorraBB.com
@@ -14,4 +15,9 @@
 	</a>
 </div-->
 <button id="bookButton" class="button" onclick="location.href='http://www.booking.com/hotel/ie/andorra-bed-and-breakfast.html?aid=330843;lang=en';" title="We hope to see you soon.">Book Now</button>
+=======
+<span id="thankYouText" title="See you at one of our gigs soon">See you at one of our gigs soon
+</span>
+<button id="homeButton" class="button" onclick="location.href='index.php';" title="Home.">Home</button>
+>>>>>>> origin/master
 <!--span id="expandFooterIcon" class="ui-icon ui-icon-carat-1-n"></span-->
