@@ -1,11 +1,11 @@
 <div id="infoAbout">
-	<h3 id="ovH1" class="infoTab">About Andorra B&B</h3>
+	<h3 id="ovH1" class="infoTab">About Andorra B&amp;B</h3>
 	<p>
 		Nuala and Fionan Clifford purchased the house in 1995 and have led a very busy life since then. 
 		Their two sons, James and Eugene, grew up here and attended the local Star of the Sea 
 		primary school in Sandymount and St. Michael&#39;s College on Ailesbury Road, just around the corner.
 		<br><br>
-		Staying at Andorra B&B Dublin, your home from home will be in the exclusive Ballsbridge area, 
+		Staying at Andorra B&amp;B Dublin, your home from home will be in the exclusive Ballsbridge area, 
 		opposite the British Embassy, and close to the RDS, Lansdowne Road sports stadium, 
 		the O2 theatre and St. Vincent&#39;s Hospital.
 		<br><br>
@@ -13,7 +13,7 @@
 		and the local pubs are famous, like Crowes and Paddy Cullens, 
 		especially when the matches are on in the RDS or Aviva (Lansdowne) stadium.
 		<br><br>
-		<img src="images/4starBordFailte.jpg" align="right">Andorra B&B has proudly earned the 4 star rating by Bord Failte.</img>
+		<img src="images/4starBordFailte.jpg" align="right">Andorra B&amp;B has proudly earned the 4 star rating by Bord Failte.</img>
 		
 		<br>
 	</p><br>
@@ -77,7 +77,7 @@
 		Andorra breakfasts are reowned by guests, family and friends of the house.
 		You will be welcomed by juices, tea, coffee, toast, cereals, yoghurts, fruit to start.
 		You can then have the choice of hearty and fulfilling cooked breakfasts from
-		the famous full Irish to scrambled eggs or ham & cheese plates.
+		the famous full Irish to scrambled eggs or ham &amp; cheese plates.
 		<a href="menu.php">(To have a look at the current menu, click here)</a>
 		<br><br>
 		Please feel free to view our reviews below and discover our previous guests favourites!
@@ -103,16 +103,16 @@
 	 	<br><br>
 	 	If you're looking for some more quiet places for food and drink,
 	 	there are a host of restaurants, pubs, cafes and bars a similar distance
-	 	from Andorra B&B. The villages of Merrion, Sandymount and Donnybrook are 
+	 	from Andorra B&amp;B. The villages of Merrion, Sandymount and Donnybrook are 
 	 	only a short walk away also.
 	 	<br><br>
-	 	Andorra B&B is just 8 minutes from the city centre by car or public transport.
+	 	Andorra B&amp;B is just 8 minutes from the city centre by car or public transport.
 	 	There are 3 bus routes that regularly pass by the door. The bus stop from the city centre is
 	 	only 5 paces from our gates and the bus stop for heading to town is just across the road.
 	 	By foot, the walk to Grafton Street is 3.2km and O'Connell Street is 3.7km.
 	 	<br><br>
-	 	Transport to Andorra B&B can also be arranged by the DART. The Dublin rail service stops at Sandymount station
-	 	around the corner from the B&B and links us to the city centre and many areas worth a visit.
+	 	Transport to Andorra B&amp;B can also be arranged by the DART. The Dublin rail service stops at Sandymount station
+	 	around the corner from the B&amp;B and links us to the city centre and many areas worth a visit.
 	 	Howth (Harbour), Clontarf, Killiney (beach and hill walks), Dun Laoighre (harbour), Bray and Greystones are all on same DART line.
 	 	<br><br>
 	 	The Aircoach is the perfect mode of transport coming from and going to the airport.

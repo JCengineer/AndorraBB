@@ -28,7 +28,7 @@ var UI = (function(){
 		$.get('info.php').done(
 			function(data){
 				$('#imageOverlay').html( data );
-				console.log(data);
+				//console.log(data);
 			}).error(function(data){
 				alert('Info loading error...');
 			}
@@ -157,8 +157,12 @@ var UI = (function(){
 	$(window).load( function(){ initialiseUI();});
 
 	return {
-		updateUI: updateUI
+		updateUI: updateUI,
+		initialiseUI:initialiseUI
 	}
 
+	$(window).load( function(){ 
+		UI.initialiseUI();
+	});
 
 }());	

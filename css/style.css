@@ -31,7 +31,7 @@ a {
     position: relative;}
   #imageandtextHome #headings{
     min-width: 400px;
-    width:40%;
+    width:100%;
     text-align: center;
     float: left;
     position: relative;}
@@ -68,7 +68,7 @@ a {
         .button span{
           padding:0px; }
   #imageandtextHome #imageAndOverlay {
-    width:60%;
+    width:100%;
     min-width: 400px;
     max-width: 1000px;
     float: left;
@@ -87,7 +87,7 @@ a {
       overflow: auto;
 
       padding: 2%;
-      height:96%;
+      height:0%;
       width:96%;
       max-width: 1000px;
 
@@ -177,18 +177,21 @@ a {
   color: #ffffff; 
   font-family: AlexBrush, serif;
   font-size: 30px;
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 45px;
   bottom: 0px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #380009;
   
   overflow: hidden;
   background-color: #770010;
   clear: both;
   z-index: 5;}
   #footerdiv #thankYouText{
-    left: 2%;
-    top: 15%;
+    left: 1%;
+    top: 5px;
     position: relative;}
   #footerdiv #infoText {
     font-family:ariel, sans-serif;
@@ -197,22 +200,25 @@ a {
     float: right;
     position: absolute;
     top: 5px;
-    right: 125px;
+    right: 160px;
     z-index:10;
     background-color: #770010;}
-  #footerdiv #homeButton{
+  #footerdiv #bookButton{
     float: right;
     position: absolute;
-    top: 1%;
-    right: 1%;}
-  #footerdiv #expandFooterIcon{
+    top: 2px;
+    right: 2px;}
+  /*#footerdiv #expandFooterIcon{
     color: #ffffff;
     float: right;
-    position: relative;}
+    position: relative;}*/
   #footerdiv .button{
-    height:100%;
+    height:90%;
     position:relative;
     /*background-color: #990020;*/
+  }
+  #footerdiv a{
+    text-decoration: none;
   }
 
 
