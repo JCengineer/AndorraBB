@@ -2,11 +2,13 @@
 	<h3 id="ovH3">Our guest rooms</h3>
 	<p>
 		You have a choice of 4 comfortable and homely rooms.
-<br><br>
-Prices are from €45.00 to €55.00 per person sharing per night.<br>
-                      €55.00 to €70.00 for  single occupancy.<br>
-* All prices include a full breakfast each morning.<br>
-** 50% reduction for children under 12 years when sharing with 2 adults, only when booked directly with Andorra B & B.
+		<br><br>
+		Prices are from &euro;49.00 to &euro;59.00 per person sharing per night.<br>
+		&euro;55.00 to &euro;70.00 for  single occupancy.<br>
+		* All prices include a full breakfast each morning.<br>
+		** 50% reduction for children under 12 years when sharing with 2 adults, only when booked directly with Andorra B & B.
+		<br>
+		***For best rates and service, contact us directly by <a href="tel:+35316689666">phone</a> or <a href="mailto:&#x61;&#x6E;&#x64;&#x6F;&#x72;&#x72;&#x61;&#x62;&#x62;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">email</a>.
 		<br><br>
 		<u>Room 1:</u>	First floor room to the rear of the house overlooking the garden.
 						This room has 1 double bed and 1 single bed.

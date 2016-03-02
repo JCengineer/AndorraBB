@@ -13,20 +13,20 @@
 	<span>Welcome, C&eacute;ad M&iacute;le F&aacute;ilte, Bienvenue, Willkommen, Bienvenido, Benenuto</span>
 </div>
 <div id="leftMenuBar">
-	<button id="aboutUs" class="button" title="About Andorra B&amp;B" onclick="location.href='AboutUs.php';">
+	<button id="aboutUs" class="button" title="About Andorra B&amp;B">
 		About us</button>
-	<button id="bookNow" class="button" title="Book with us now" onclick="location.href='BookNow.php';">
+	<button id="bookNow" class="button" title="Book with us now">
 		Book Now</button>
-	<button id="rooms" class="button" title="Our guestrooms" onclick="location.href='Rooms.php';">
+	<button id="rooms" class="button" title="Our guestrooms">
 		Rooms</button>
-	<button id="facilities" class="button" title="Our local facilities and amenities" onclick="location.href='ContactUs.php';">
+	<button id="facilities" class="button" title="Our local facilities and amenities">
 		Amenities</button>
-	<button id="location" class="button" title="The location" onclick="location.href='Location.php';">
+	<button id="location" class="button" title="The location">
 		Location</button>
-	<button id="news" class="button" title="News, events and blog" onclick="location.href='News.php';">
+	<button id="news" class="button" title="News, events and blog">
 		News</button>
-	<button id="friends" class="button" title="Friends, local services and deals" onclick="location.href='Affiliates.php';">
+	<button id="friends" class="button" title="Friends, local services and deals">
 		Friends</button>
-	<button id="contactUs" class="button" title="Contact us by email, phone or form" onclick="location.href='ContactUs.php';">
+	<button id="contactUs" class="button" title="Contact us by email, phone or form">
 		Contact Us</button>
 </div>

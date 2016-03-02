@@ -1,11 +1,13 @@
 /*copyright james clifford 2013 for Andorra B&B, Dublin, Ireland www.andorrabb.com, www.jc-ae.com
  */
 
+if ($) $("button").button();
 var UI = (function(){
 
 	var imgW = 0, imgH = 0, overlayH = 0;//image sizing variables
-	var LayoutIsVertical = true;
+	var LayoutIsVertical = true, hotHistory = false;
 
+	if ($) $("button").button();
 	
 
 	initialiseUI = function(){
@@ -14,9 +16,9 @@ var UI = (function(){
 
 		//getting imagemain's image size
 		getImgSize($('#imagemain').attr('src'));
+		if ($) $("button").button();
 
 		$("#imageOverlay").hide();
-		$("button").button();
 		$('#leftMenuBar button').removeAttr('onclick');
 
 		$('#galleryscroller').magnificPopup({
@@ -25,14 +27,14 @@ var UI = (function(){
 			gallery:{enabled:true}
 		});
 
-		$.get('info.php').done(
-			function(data){
-				$('#imageOverlay').html( data );
-				//console.log(data);
-			}).error(function(data){
-				alert('Info loading error...');
-			}
-		);
+		// $.get('info.php').done(
+		// 	function(data){
+		// 		$('#imageOverlay').html( data );
+		// 		//console.log(data);
+		// 	}).error(function(data){
+		// 		alert('Info loading error...');
+		// 	}
+		// );
 
 		responsiveLayout();
 
@@ -53,54 +55,76 @@ var UI = (function(){
 		//console.log(e.target, "verses", this);
 		var id = this.id;
 		//console.log("toggling element #"+id+" with "+$("#"+id).hasClass("showingRight")+" showingRight class.");
-		
 		if ($("#"+id).hasClass("showingRight")){
 			$("#imageOverlay").hide();
 			$("#"+id).removeClass("showingRight");
 			$('#imageAndOverlay').height( 'auto' );
 			//$('div:has(display == "block")').hide();
+			hotHistory=true;
+			window.location.hash = '';
 		} else {
-			$("#leftMenuBar .showingRight").removeClass("showingRight");
-			$("#imageOverlay").show(function(){
-				if (id == "aboutUs") {
-					$("#imageOverlay #infoAbout").siblings().hide();
-					$("#imageOverlay #infoAbout").show(500, heightMatch);
-					$("#"+id).addClass("showingRight");
-				} else if (id == "bookNow") {
-					$("#imageOverlay #infoBook").siblings().hide();
-					$("#imageOverlay #infoBook").show(500, heightMatch);
-					$("#"+id).addClass("showingRight");
-				} else if (id == "rooms") {
-					$("#imageOverlay #infoRooms").siblings().hide();
-					$("#imageOverlay #infoRooms").show(500, heightMatch);
-					$("#"+id).addClass("showingRight");
-				} else if (id == "facilities") {
-					$("#imageOverlay #infoFacilities").siblings().hide();
-					$("#imageOverlay #infoFacilities").show(500, heightMatch);
-					$("#"+id).addClass("showingRight");
-				}  else if (id == "location") {
-					$("#imageOverlay #infoLocation").siblings().hide();
-					$("#imageOverlay #infoLocation").show(500, heightMatch);
-					$("#"+id).addClass("showingRight");
-				} else if (id == "news") {
-					$("#imageOverlay #infoNews").siblings(500, heightMatch).hide();
-					$("#imageOverlay #infoNews").show();
-					$("#"+id).addClass("showingRight");
-				} else if (id == "friends") {
-					$("#imageOverlay #infoFriends").siblings().hide();
-					$("#imageOverlay #infoFriends").show(500, heightMatch);
-					$("#"+id).addClass("showingRight");
-				} else if (id == "contactUs") {
-					$("#imageOverlay #infoContact").siblings().hide();
-					$("#imageOverlay #infoContact").show(500, heightMatch);
-					$("#"+id).addClass("showingRight");
-				}
-
-				var scrollTo = $('#imageOverlay').offset().top;
-				$('body').animate({scrollTop:scrollTo}, 500);
-			});
+			hotHistory=true;
+			window.location.hash = id;
+			showContent(id);
 		}
+		
 	});
+
+	window.onhashchange = function(){
+		if (!hotHistory) showContent(window.location.hash.substring(1));
+		hotHistory = false;
+	}
+
+	function showContent(id){
+
+		if (!id || id === "") {
+			$('.showingRight').removeClass('showingRight');
+			$('#imageAndOverlay').height( 'auto' );
+			$("#imageOverlay").hide();
+			return;
+		}
+
+		$("#leftMenuBar .showingRight").removeClass("showingRight");
+		$("#imageOverlay").show(function(){
+			if (id == "aboutUs") {
+				$("#imageOverlay #infoAbout").siblings().hide();
+				$("#imageOverlay #infoAbout").show(500, heightMatch);
+				$("#"+id).addClass("showingRight");
+			} else if (id == "bookNow") {
+				$("#imageOverlay #infoBook").siblings().hide();
+				$("#imageOverlay #infoBook").show(500, heightMatch);
+				$("#"+id).addClass("showingRight");
+			} else if (id == "rooms") {
+				$("#imageOverlay #infoRooms").siblings().hide();
+				$("#imageOverlay #infoRooms").show(500, heightMatch);
+				$("#"+id).addClass("showingRight");
+			} else if (id == "facilities") {
+				$("#imageOverlay #infoFacilities").siblings().hide();
+				$("#imageOverlay #infoFacilities").show(500, heightMatch);
+				$("#"+id).addClass("showingRight");
+			}  else if (id == "location") {
+				$("#imageOverlay #infoLocation").siblings().hide();
+				$("#imageOverlay #infoLocation").show(500, heightMatch);
+				$("#"+id).addClass("showingRight");
+			} else if (id == "news") {
+				$("#imageOverlay #infoNews").siblings(500, heightMatch).hide();
+				$("#imageOverlay #infoNews").show();
+				$("#"+id).addClass("showingRight");
+			} else if (id == "friends") {
+				$("#imageOverlay #infoFriends").siblings().hide();
+				$("#imageOverlay #infoFriends").show(500, heightMatch);
+				$("#"+id).addClass("showingRight");
+			} else if (id == "contactUs") {
+				$("#imageOverlay #infoContact").siblings().hide();
+				$("#imageOverlay #infoContact").show(500, heightMatch);
+				$("#"+id).addClass("showingRight");
+			}
+
+			var scrollTo = $('#imageOverlay').offset().top;
+			$('body').animate({scrollTop:scrollTo}, 500);
+		});
+	}
+
 
 	heightMatch = function(){
 		if (LayoutIsVertical == true) {
