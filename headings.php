@@ -13,20 +13,20 @@
 	<span>Welcome, C&eacute;ad M&iacute;le F&aacute;ilte, Bienvenue, Willkommen, Bienvenido, Benenuto</span>
 </div>
 <div id="leftMenuBar">
-	<button id="aboutUs" class="button" title="About Andorra B&amp;B">
+	<button id="aboutUs" class="button ui-button" title="About Andorra B&amp;B">
 		About us</button>
-	<button id="bookNow" class="button" title="Book with us now">
+	<button id="bookNow" class="button ui-button" title="Book with us now">
 		Book Now</button>
-	<button id="rooms" class="button" title="Our guestrooms">
+	<button id="rooms" class="button ui-button" title="Our guestrooms">
 		Rooms</button>
-	<button id="facilities" class="button" title="Our local facilities and amenities">
+	<button id="facilities" class="button ui-button" title="Our local facilities and amenities">
 		Amenities</button>
-	<button id="location" class="button" title="The location">
+	<button id="location" class="button ui-button" title="The location">
 		Location</button>
-	<button id="news" class="button" title="News, events and blog">
+	<button id="news" class="button ui-button" title="News, events and blog">
 		News</button>
-	<button id="friends" class="button" title="Friends, local services and deals">
+	<button id="friends" class="button ui-button" title="Friends, local services and deals">
 		Friends</button>
-	<button id="contactUs" class="button" title="Contact us by email, phone or form">
+	<button id="contactUs" class="button ui-button" title="Contact us by email, phone or form">
 		Contact Us</button>
 </div>

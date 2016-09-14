@@ -163,15 +163,15 @@ var UI = (function(){
 			$('#imageAndOverlay').width("100%");
 			//$('#imageAndTextHome #imageAndOverlay').height("auto");
 			var w = $('#imageAndOverlay').width();
-			if ( w >= 750 ){
-				//if page is too large, display the image and overlay in the centre of the screen
-				var marginLR = (bodyW - 750) /2;
-				$('#imageAndOverlay').css('margin-left', marginLR);
-				$('#imageAndOverlay').css('margin-right', marginLR);
-			} else {
-				$('#imageAndOverlay').css('margin-left', 0);
-				$('#imageAndOverlay').css('margin-right', 0);
-			}
+			// if ( w >= 750 ){
+			// 	//if page is too large, display the image and overlay in the centre of the screen
+			// 	var marginLR = (bodyW - 750) /2;
+			// 	$('#imageAndOverlay').css('margin-left', marginLR);
+			// 	$('#imageAndOverlay').css('margin-right', marginLR);
+			// } else {
+			// 	$('#imageAndOverlay').css('margin-left', 0);
+			// 	$('#imageAndOverlay').css('margin-right', 0);
+			// }
 			LayoutIsVertical = true;
 		/*}*/
 		$('#badges #manual').width( bodyW - $('#badges #tripadvisorwidget').width() - 40);

@@ -72,17 +72,16 @@ a {
           padding:0px; }
   #imageandtextHome #imageAndOverlay {
     width:100%;
-    max-width: 750px;
-    position: relative;
     display: inline-block;
     margin: auto;
-    position: relative;}
+    position: relative;
+    text-align: center;}
     #imageAndOverlay #imagemain {
       width: 96%;
-      float: left;
+      max-width: 750px;
       position: relative;
       overflow:hidden;
-      margin: 2%;
+      margin: 2% auto;
       }
     #imageAndOverlay #imageOverlay{
       display:none;
@@ -97,6 +96,7 @@ a {
       max-width: 1000px;
 
       position: absolute;
+      top:0px;
       z-index: 1;
       /* fallback */
       background-color: #640010;

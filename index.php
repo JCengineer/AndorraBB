@@ -74,11 +74,11 @@
 					</div>
 				</div>
 
-				<a href="http://www.discoverireland.ie/Where-To-Stay/andorra/40832" class="margin10 badge padding10">
+				<!-- <a href="http://www.discoverireland.ie/Where-To-Stay/andorra/40832" class="margin10 badge padding10">
 					<div class="badgeInner">
 						<img src="images/4starBordFailte.jpg">
 					</div>
-				</a>
+				</a> -->
 
 				<div id="tripadvisorbadge" class="margin10 badge padding10">
 					<div class="badgeInner">
@@ -92,7 +92,8 @@
 						</ul>
 						</div>
 						<script src="https://www.jscache.com/wejs?wtype=certificateOfExcellence&amp;uniq=885&amp;locationId=496871&amp;lang=en_IE&amp;year=2015&amp;display_version=2"></script>
-
+						<br>
+						<div id="TA_excellent781" class="TA_excellent"><ul id="Jr67O8Vv" class="TA_links GS6JaSMBix"><li id="pUvFMp" class="d0vutq7wUx"><a target="_blank" href="http://www.tripadvisor.ie/"><img src="http://e2.tacdn.com/img2/widget/tripadvisor_logo_115x18.gif" alt="TripAdvisor" class="widEXCIMG" id="CDSWIDEXCLOGO"/></a></li></ul></div><script src="http://www.jscache.com/wejs?wtype=excellent&uniq=781&locationId=496871&lang=en_IE&display_version=2"></script>
 					</div>
 				</div>
 
